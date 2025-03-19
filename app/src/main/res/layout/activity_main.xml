@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Logo kecil di kiri atas -->
+    <ImageView
+        android:id="@+id/lgo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logogo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Teks GoWaste di sebelah kanan logo -->
+    <TextView
+        android:id="@+id/txtGoWaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GoWaste"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/lgo"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@id/lgo"
+        android:layout_alignBottom="@id/lgo"/>
+
+    <!-- Gambar besar di tengah -->
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lgo"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/gowast" />
+
+    <!-- Text "Selamat Datang di GoWaste" -->
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di GoWaste!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Ga perlu lagi pusing ngurusin sampah. GoWaste bakal ambil sampahmu!"
+        android:textSize="16sp"
+        android:maxWidth="320dp"
+        android:textAlignment="center"/>
+
+    <!-- Layout untuk tombol Masuk dan Daftar -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/caption"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/buttonMasuk"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Masuk"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/buttonDaftar"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Daftar"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
